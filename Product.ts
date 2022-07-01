@@ -4,9 +4,9 @@ export class Product{
     private _type:string;
     private _price:number;
     private _amount:number;
-    private _date:string;
+    private _date:Date;
 
-    constructor(name: string, type: string, price: number, amount: number, date: string) {
+    constructor(name: string, type: string, price: number, amount: number, date: Date) {
         this._name = name;
         this._type = type;
         this._price = price;
@@ -54,11 +54,11 @@ export class Product{
         this._amount = value;
     }
 
-    get date(): string {
+    get date(): Date {
         return this._date;
     }
 
-    set date(value: string) {
+    set date(value: Date) {
         this._date = value;
     }
     toString(){

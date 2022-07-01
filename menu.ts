@@ -16,7 +16,12 @@ export class Menu {
 
     showAllProduct(): void {
         let listProduct = this.products.getAll();
-        console.log(listProduct);
+        if(listProduct.length==0){
+            console.log('không có sản phẩm ');
+            
+        }else{
+            console.log(listProduct);
+        }
     }
 
     findProduct(): void {
@@ -53,7 +58,7 @@ export class Menu {
         let type = rl.question('Nhập loại hàng ');
         let price = +rl.question('Nhâp giá sản phẩm mới');
         let amount = +rl.question('Nhập số lượng hàng nhập kho ');
-        let date = rl.question('Nhập ngày nhập ');
+        let date = new Date();
 
         return new Product(name, type, price, amount, date);
     }
