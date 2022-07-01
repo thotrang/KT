@@ -43,7 +43,7 @@ export class Menu {
             let current=this.products.findByName(name);
             if(current!=-1){
                 isValidName=false;
-                console.log('Tên tài khoản đã tồn tại');
+                console.log('Sản phẩm đã tồn tại');
             }else{
                 isValidName=true;
             }
