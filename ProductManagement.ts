@@ -12,7 +12,7 @@ export class ProductManagement{
                 return i;
             }
         }
-        return -1;
+        return index;
     }
     getAll(){
         return ProductManagement.listProduct;

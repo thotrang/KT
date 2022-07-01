@@ -27,7 +27,7 @@ export class Menu {
     findProduct(): void {
         let name = rl.question('Nhập sản phẩm bạn cần tìm ');
         let index = this.products.findByName(name);
-        if (index = -1) {
+        if (index == -1) {
             console.log('Sản phẩm cần tìm không tồn tại ');
         } else {
             console.log(this.products.getAll()[index]);
