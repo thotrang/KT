@@ -75,6 +75,8 @@ export class Menu {
                 case '3': {
                     let product = this.addProduct();
                     this.products.addNewProduct(product);
+                    console.log('Thêm sản phẩm thành công');
+                    
                 }
                     break;
 
@@ -94,7 +96,7 @@ export class Menu {
             }
 
         }
-        while (choice == '0');
+        while (choice != '0');
     }
 
 }
